@@ -1,0 +1,6 @@
+id,type,name,status,description,start,duration,epic
+1,NORM,name 1,NEW,descr 1,,
+2,SUBT,name 2,NEW,descr 2,,,3
+3,EPIC,name 3,NEW,descr 3,,
+
+1,2
