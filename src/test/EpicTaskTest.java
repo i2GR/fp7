@@ -1,5 +1,6 @@
 package test;
 
+import com.google.gson.Gson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -261,5 +262,15 @@ class EpicTaskTest {
         epicWithSubs.addSubTask(sub5, sub3, sub4);
 
         assertArrayEquals(new Integer[]{3, 4, 5}, epicWithSubs.getSubs().toArray(new Integer[]{}));
+    }
+
+    /**
+     * тест сериализации()
+     */
+    @Test
+    void gsonTest(){
+        Gson gson= new Gson();
+        String str = gson.toJson(epicNoSubs);
+        System.out.println(str);
     }
 }
